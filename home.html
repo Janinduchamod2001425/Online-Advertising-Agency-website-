@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Advertising Agency Home Page</title>
+    <link rel="stylesheet" href="home.css">
+
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.google.com/icons?icon.set=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Shadows%20Into%20Light">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!--header navigation panel-->
+<div class="header">
+    <!--logo-->
+    <div class="logo">
+        <p class="logo-name"><a href="#"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+    </div>
+    <div class="logo1"></div>
+
+    <!--navigation panel-->
+    <div class="nav-bar">
+        <a href="#" class="link active">Home</a>
+        <a href="services1.html" class="link">Services</a>
+        <a href="projects.html" class="link">Projects</a>
+        <a href="aboutUs.html" class="link">About Us</a>
+        <a href="blog.html" class="link">Blog</a>
+        <a href="ContactUs.html" class="link">Contact Us</a>
+    </div>
+
+    <!--login & join buttons-->
+    <button class="join"><a href="join.html">Join</a></button>
+    <button class="login"><a href="login.html">Login</a></button>
+</div>
+
+<!--sub navigations & search bar-->
+<div class="header-2">
+    <!--search bar-->
+    <form action="search.php" method="get">
+        <input type="text" class="search" name="query" placeholder="Enter what you want to search here">
+
+        <!--search button-->
+        <button type="submit" class="go">Search &nbsp;&nbsp;
+            <!--search icon svg-->
+            <svg xmlns="http://www.w3.org/2000/svg" height="0.75em" viewBox="0 0 512 512">
+                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6
+                457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3
+                0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0
+                208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0
+                0-288 144 144 0 1 0 0 288z"/>
+            </svg>
+        </button>
+    </form>
+
+    <div class="btn-set">
+        <button class="button1"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+        <div class="hide">Payment Gateway</div>
+        <button class="button2"><a href="Packages.html"><img src="images/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+        <div class="hide1">Packages</div>
+        <button class="button3"><a href="advertiserSupport.html"><img src="images/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+        <div class="hide2">Advertiser Support</div>
+        <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+        <div class="hide6">Portfolio</div>
+    </div>
+
+    <!--date and time-->
+    <p id="Date-Time" class="date"></p>
+</div>
+
+<!--Date script - w3schools-->
+<script>
+    const dt = new Date();
+    document.getElementById("Date-Time").innerHTML = dt;
+</script>
+
+<!--Background-Image-->
+<div class="bg-image" id="Home">
+    <img src="images/wallpaperflare.com_wallpaper%20(18).jpg" alt="" class="bg-image">
+
+    <p class="bg-quote">“Advertising is the price you pay for having an unremarkable <br>product or service.”</p>
+
+    <button class="start"><a href="Welcome.html">Get Started</a></button>
+</div>
+
+<!--Quote - 1-->
+<div class="Quotes">
+    <h1 class="quote-1">“It’s not what you sell that matters as much as how you sell it!”</h1>
+    <h3 class="author-1">- Brian Halligan -</h3>
+</div>
+
+<!--About Us Section-->
+<div class="about-us" id="about-us">
+    <div class="img">
+        <img src="images/wallpaperflare.com_wallpaper%20(20).jpg" alt="" class="img-1">
+    </div>
+
+    <div class="Description">
+        <p class="topic">About Us</p>
+        <p class="topic-1-2">Discover Our Story</p>
+        <p class="des-1">Welcome to our internet advertising firm, where we mix innovation, creativity, and strategy to produce outstanding outcomes for our clients. We are dedicated to helping companies flourish in the constantly changing online environment as a premier digital marketing partner.
+            <br><br>
+            Our company is aware of the potential of efficient web advertising. We use the most recent technologies and market knowledge to create effective campaigns, thanks to the internet's broad reach and precise targeting capabilities. Our team of seasoned professionals is committed to generating measurable results and driven by a love for digital marketing.
+            Our strategy starts with a thorough grasp of your target market and company goals. We think that a strong foundation of research and analysis is the key to effective advertising.
+        </p>
+        <button class="learn-more"><a href="aboutUs.html">Learn More</a></button>
+    </div>
+</div>
+
+<!--Sponsors-->
+<div class="sponsors" id="sponsors">
+    <h1 class="spo-topic">- Sponsors -</h1>
+    <div class="spon-1">
+        <img src="images/Logos/icons8-google-96.png" class="google">
+    </div>
+    <div class="spon-2">
+        <img src="images/Logos/icons8-youtube-96.png" class="youtube">
+    </div>
+    <div class="spon-3">
+        <img src="images/Logos/icons8-amazon-96.png" class="Amazon">
+    </div>
+    <div class="spon-4">
+        <img src="images/Logos/icons8-apple-96.png" class="apple">
+    </div>
+    <div class="spon-5">
+        <img src="images/Logos/icons8-ebay-96.png" class="ebay">
+    </div>
+    <div class="spon-6">
+        <img src="images/Logos/icons8-air-jordan-96.png" class="google">
+    </div>
+
+</div>
+
+<!--Services Section-->
+<div class="services" id="services">
+    <p class="service-topic">Services</p>
+        <div class="slide-1">
+            <div class="ser-1">
+                <div class="Logo-image">
+                    <img src="images/Logos/icons8-advertising-50.png" class="s1">
+                </div>
+                <p class="service1">Digital Advertising Campaigns</p>
+                <p class="se1-des">Digital advertising campaigns can be created and managed by online advertising firms for a variety of online media,
+                    including display networks, search engines (like Google Ads), social media sites (like Facebook, Instagram, and Twitter), and video platforms (like YouTube).
+                    <br>They can create ad creatives, focus on particular audiences, fine-tune campaigns, and monitor key performance indicators.
+                </p>
+                <button class="lern1"><a href="services1.html">Learn More</a></button>
+            </div>
+            <div class="ser-2">
+                <div class="Logo-image">
+                    <img src="images/Logos/icons8-facebook-50.png" class="s2">
+                    <img src="images/Logos/icons8-twitter-50.png" class="s23">
+                    <img src="images/Logos/icons8-instagram-50.png" class="s24">
+                </div>
+                <p class="service1">Social Media Advertising</p>
+                <p class="se1-des">On well-known social media sites, <br>online advertising agencies can create <br>and implement
+                    tailored advertising campaigns. <br>To increase reach, engagement, and conversions, <br>they can develop compelling ad content,
+                    <br>specify audience demographics and interests,
+                    <br>manage ad budgets, and <br>track campaign effectiveness.</p>
+                <button class="lern2"><a href="services1.html">Learn More</a></button>
+            </div>
+            <div class="ser-3">
+                <div class="Logo-image">
+                    <img src="images/Logos/icons8-analytics-50.png" class="s3">
+                </div>
+                <p class="service1">Analytics and Reporting</p>
+                <p class="se1-des">Online advertising agencies provide detailed <br>analytics and reporting on the performance of advertising campaigns.
+                    <br>They track key metrics such as impressions, clicks, conversions, cost per acquisition (CPA),
+                    <br>return on ad spend (ROAS), and provide regular reports to clients, offering insights and recommendations for
+                    <br>campaign optimization.</p>
+                <button class="lern3"><a href="services1.html">Learn More</a></button>
+            </div>
+        </div>
+</div>
+
+<!--Quote - 2-->
+<div class="Quotes-2">
+    <h1 class="quote-1">“90% trust peers on social networks; only 15-18% trust brands.”</h1>
+    <h3 class="author-2">- Danny Brown -</h3>
+</div>
+
+<!--header navigation panel-->
+<div class="contact-us" id="contact-us">
+    <div class="Description-2">
+        <p class="contact-topic">Contact Us</p>
+        <p class="subtopic">Send Your Information</p>
+        <div class="contact-form">
+            <form action="home.php" method="post">
+                <label class="Lname">Name:  </label>
+                <input type="text" name="name" class="Cname" placeholder="Enter your full name" required>
+
+                <label class="Lemail">Email:  </label>
+                <input type="email" name="email" class="Cemail" placeholder="Enter your email" required>
+
+                <label class="Lnum">Phone No:  </label>
+                <input type="number" name="phone_number" class="Cnum" maxlength="10" placeholder="Enter your phone number" required>
+
+                <label class="Lmessage">Message:  </label><br>
+                <textarea cols="50" rows="50" class="Cmessage" name="message" placeholder="Enter your message as follows:                         I am undergraduate software engineering student at SLIIT campus, I want to publish my portfolio through the video advertisement. I already checked your ad campaign packages. I want to increase client rate by using that campaign. How can you help to me?"></textarea><br>
+
+                <input type="checkbox" class="Cconfrim" name="confirm" required>
+                <label class="Lconfirm">Yes, I agree to receive phone calls from ACTIVE</label>
+
+                <input type="submit" value="Submit" name="send" class="submit-contact" onclick="confirmationMessage()">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function confirmationMessage()
+        {
+            alert("Response Submitted Successfully");
+        }
+    </script>
+
+    <div class="img">
+        <img src="images/wallpaperflare.com_wallpaper%20(14).jpg" alt="" class="contact-img">
+    </div>
+</div>
+
+<!--footer-->
+<div class="footer">
+    <div class="footer-logo">
+        <!--logo-->
+        <div class="logo">
+            <p class="logo-name"><a href="#Home"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+        </div>
+        <div class="logo1"></div>
+
+        <p class="fdes">The best digital advertisers in the world</p>
+
+        <div class="footer-btn-set">
+            <button class="button1"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+            <div class="hide3">Payment Gateway</div>
+            <button class="button2"><a href="Packages.html"><img src="images/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+            <div class="hide4">Packages</div>
+            <button class="button3"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+            <div class="hide5">Advertiser Support</div>
+            <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+            <div class="hide7">Portfolio</div>
+        </div>
+
+    </div>
+
+    <div class="navigate">
+        <div class="footer-links">
+            <p class="link1">Home</a></p>
+            <p class="link2">Content</a></p>
+            <p class="link3">Company</a></p>
+        </div>
+        <div class="home-sub">
+            <p class="sub1"><a href="#" class="l1">Get Started</a></p>
+            <p class="sub2"><a href="portfolio.html" class="l1">Portfolio</a></p>
+            <p class="sub3"><a href="Packages.html" class="l1">Packages</a></p>
+        </div>
+        <div class="home-sub-2">
+            <p class="sub4"><a href="services1.html" class="l1">Services</a></p>
+            <p class="sub5"><a href="projects.html" class="l1">Projects</a></p>
+            <p class="sub6"><a href="blog.html" class="l1">Blogs</a></p>
+        </div>
+        <div class="home-sub-3">
+            <p class="sub7"><a href="aboutUs.html" class="l1">About Us</a></p>
+            <p class="sub8"><a href="advertiserSupport.html" class="l1">Advertiser Support</a></p>
+            <p class="sub9"><a href="ContactUs.html" class="l1">Contact Us</a></p>
+        </div>
+    </div>
+
+    <button class="footer-sign"><a href="login.html">Sign In</a></button>
+    <button class="footer-join"><a href="join.html">Join</a></button>
+
+    <hr class="horizontal">
+
+    <div class="mail">
+        <img src="images/Logos/icons8-mail-50.png" class="footer-mail">
+        <p class="f-t-1">digitalwave2023@gmail.com / digitalwave123@yahoo.com</p>
+    </div>
+   <div class="address">
+        <img src="images/Logos/icons8-address-50.png" class="footer-address">
+        <p class="f-t-2">No. 119, Galle Road, Colombo 7</p>
+    </div>
+    <div class="phone">
+       <img src="images/Logos/icons8-phone-50.png" class="footer-phone">
+       <p class="f-t-3">011 - 2251197 / 091 - 2258978 / 070 - 4830006</p>
+   </div>
+
+    <div class="acc-logo">
+        <a href="#" class="fa fa-facebook fa-2x"></a>
+        <a href="#" class="fa fa-twitter fa-2x"></a>
+        <a href="#" class="fa fa-google fa-2x"></a>
+        <a href="#" class="fa fa-linkedin fa-2x"></a>
+        <a href="#" class="fa fa-youtube fa-2x"></a>
+        <a href="#" class="fa fa-instagram fa-2x"></a>
+        <a href="#" class="fa fa-pinterest fa-2x"></a>
+        <a href="#" class="fa fa-snapchat-ghost fa-2x"></a>
+        <a href="#" class="fa fa-skype fa-2x"></a>
+    </div>
+
+    <img src="images/footer-logos/icons8-copyright-24.png" class="copy">
+    <p class="copyright">2023 DigitalWave | All Rights Reserved |</p>
+    <p class="pp"><a href="privacy.html">Privacy policy </a>|</p>
+    <p class="terms"><a href="terms.html">Terms of Use </a>|</p>
+    <p class="batch">SLIIT Y1S2 - MLB_04.01_07</p>
+</div>
+
+</body>
+</html>

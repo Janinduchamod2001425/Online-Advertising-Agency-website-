@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to DigitalWave</title>
+    <link rel="stylesheet" href="Welcome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--<div class="welcome-background">-->
+        <!--<video autoPlay loop muted src='intro_video/Online_advertising_agency.mp4'/>-->
+        <video autoPlay loop muted width="1400px" height="715px" src="intro_video/Online_advertising_agency.mp4"></video>
+    <!--</div>-->
+    
+    <div class="popup center">
+        <div class="icon">
+            <!--logo-->
+            <div class="logo">
+                <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+            </div>
+            <div class="logo1"></div>
+        </div>
+        <div class="title">
+            Welcome to DigitalWave!
+        </div>
+        <div class="description">
+            Your digital advertising powerhouse. We specialize in delivering impactful online campaigns that drive growth and boost your brand's visibility. With our expertise and cutting-edge strategies, we'll make sure you ride the wave of success in the digital realm.
+            <br>Let's make waves together!
+        </div>
+        <div class="dismiss-btn">
+            <button id="dismiss-popup-btn"><a href="home.html">Dismiss</a></button>
+        </div>
+    </div>
+
+    <div class="center">
+        <button id="open-popup-btn">Welcome to DigitalWave</button>
+    </div>
+
+    <script>
+        document.getElementById("open-popup-btn").addEventListener("click", function (){
+            document.getElementsByClassName("popup")
+                [0].classList.add("active");
+        });
+
+        document.getElementById("dismiss-popup-btn").addEventListener("click", function (){
+            document.getElementsByClassName("popup")
+                [0].classList.remove("active");
+        });
+    </script>
+
+</body>
+</html>
+

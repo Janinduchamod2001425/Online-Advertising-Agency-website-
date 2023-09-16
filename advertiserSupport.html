@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Advertising Agency Home Page</title>
+  <link rel="stylesheet" href="advertiserSupport.css">
+
+  <!--Google Fonts-->
+  <link rel="stylesheet" href="https://fonts.google.com/icons?icon.set=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Shadows%20Into%20Light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+<!--header navigation panel-->
+<div class="header">
+  <!--logo-->
+  <div class="logo">
+    <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+  </div>
+  <div class="logo1"></div>
+
+  <!--navigation panel-->
+  <div class="nav-bar">
+    <a href="home.html" class="link">Home</a>
+    <a href="services1.html" class="link">Services</a>
+    <a href="projects.html" class="link">Projects</a>
+    <a href="aboutUs.html" class="link">About Us</a>
+    <a href="blog.html" class="link">Blog</a>
+    <a href="ContactUs.html" class="link">Contact Us</a>
+  </div>
+
+  <!--login & join buttons-->
+  <button class="join"><a href="join.html">Join</a></button>
+  <button class="login"><a href="login.html">Login</a></button>
+</div>
+
+<!--sub navigations & search bar-->
+<div class="header-2">
+  <!--search bar-->
+  <form action="search.php" method="get">
+    <input type="text" class="search" name="query" placeholder="Enter what you want to search here">
+
+    <!--search button-->
+    <button type="submit" class="go">Search &nbsp;&nbsp;
+      <svg xmlns="http://www.w3.org/2000/svg" height="0.75em" viewBox="0 0 512 512">
+        <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6
+                457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3
+                0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0
+                208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0
+                0-288 144 144 0 1 0 0 288z"/>
+      </svg>
+    </button>
+  </form>
+
+
+
+  <div class="btn-set">
+    <button class="button1"><a href="paymentGateway.html"><img src="asserts2/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+    <div class="hide">Payment Gateway</div>
+    <button class="button2"><a href="Packages.html"><img src="asserts2/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+    <div class="hide1">Packages</div>
+    <button class="button3"><a href="advertiserSupport.html"><img src="asserts2/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+    <div class="hide2">Advertiser Support</div>
+    <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+    <div class="hide6">Portfolio</div>
+  </div>
+
+  <!--date and time-->
+  <p id="Date-Time" class="date"></p>
+</div>
+
+<!--Date function W3schools-->
+<script>
+  const dt = new Date();
+  document.getElementById("Date-Time").innerHTML = dt;
+</script>
+
+<!--Hero-image-->
+
+<div class="container">
+  <p class="hero-text">Do you need our Help? <br><span class="auto-type"></span></p>
+</div>
+
+<!--Auto typed Text function - Google-->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+  var typed = new Typed(".auto-type",{
+    strings: ["Get Advertiser Support :)"],
+    typeSpeed: 150,
+    backSpeed:150,
+    loop:true
+  })
+</script>
+
+<div class="helps">
+  <!--Contact Information-->
+
+  <div class="helps1">
+    <p class="help-topic1">Contact Information</p>
+    <p class="help-desk1">For <br>any inquiries or assistance, <br>you can reach our <br>dedicated support team <br>at
+      <br>janinduchamod@digitalwave.com <br>or <br>call us at <br>+1-123-456-7890."
+    </p>
+
+  </div>
+
+  <!--FAQ Section-->
+
+  <div class="helps2">
+    <p class="help-topic2">FAQ Section</p>
+    <p class="help-desk2">frequently asked questions <br><br> "Q: How do I create <br>an advertising account? <br><br>A: To create an account,
+      <br>simply click on the <br><span style="font-weight: bolder">'Sign Up'</span> button on our website's homepage and
+      <br>follow the registration process."
+    </p>
+  </div>
+
+  <!--advertising-guidelines-->
+
+  <div class="helps3">
+    <p class="help-topic3">Advertising Guidelines</p>
+    <p class="help-desk3">
+      "We do not allow <br>ads containing explicit content, <br>deceptive claims, or illegal products/services. <br>Please refer to our
+      <br>Advertising Guidelines for a comprehensive list of <br>our content policies."
+    </p>
+  </div>
+</div>
+
+<div class="help-logos">
+  <div class="lo1"><img src="asserts2/help_logo/icons8-contact-100.png" class="im1"></div>
+  <div class="lo1"><img src="asserts2/help_logo/icons8-faq-100.png" class="im1"></div>
+  <div class="lo1"><img src="asserts2/help_logo/icons8-format-100.png" class="im1"></div>
+  <div class="lo1"><img src="asserts2/help_logo/icons8-rules-100.png" class="im1"></div>
+  <div class="lo1"><img src="asserts2/help_logo/icons8-support-100.png" class="im1"></div>
+  <div class="lo1"><img src="asserts2/help_logo/icons8-target-audience-100.png" class="im1"></div>
+</div>
+
+<div class="helpss">
+  <!--Ad Formats and Specifications-->
+
+  <div class="helps4">
+    <p class="help-topic4">Ad Formats and Specifications</p>
+    <p class="help-desk4">
+      "Our platform supports <br>various formats, <br>including display banners <br><span style="font-weight: bolder">(300x250 pixels)</span>, <br>native ads, and
+      <br>video ads <br>(MP4 format, maximum <br>file size of 10MB)."
+    </p>
+  </div>
+
+  <!--Troubleshooting and Support-->
+
+  <div class="helps5">
+    <p class="help-topic5">Troubleshooting and Support</p>
+    <p class="help-desk5">
+      "If you encounter <br>any technical issues with our platform, please visit our Troubleshooting <br>Guide for common solutions.
+      <br>If you need further assistance, our support team is available <br>24/7 via email or live chat."
+    </p>
+  </div>
+
+  <!--Targeting and Audience Options-->
+
+  <div class="helps6">
+    <p class="help-topic6">Targeting and Audience Options</p>
+    <p class="help-desk6">
+      "Our platform offers <br>targeting options based on demographics, interests, <br>location, and behavior. <br>This allows you to precisely
+      <br>reach your desired <br>audience and optimize campaign performance."
+    </p>
+  </div>
+</div>
+
+<!--footer-->
+<div class="footer">
+  <div class="footer-logo">
+    <!--logo-->
+    <div class="logo">
+      <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+    </div>
+    <div class="logo1"></div>
+
+    <p class="fdes">The best digital advertisers in the world</p>
+
+    <div class="footer-btn-set">
+      <button class="button1"><a href="paymentGateway.html"><img src="asserts2/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+      <div class="hide3">Payment Gateway</div>
+      <button class="button2"><a href="Packages.html"><img src="asserts2/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+      <div class="hide4">Packages</div>
+      <button class="button3"><a href="#"><img src="asserts2/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+      <div class="hide5">Advertiser Support</div>
+      <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+      <div class="hide7">Portfolio</div>
+    </div>
+
+  </div>
+
+  <div class="navigate">
+    <div class="footer-links">
+      <p class="link1">Home</a></p>
+      <p class="link2">Content</a></p>
+      <p class="link3">Company</a></p>
+    </div>
+    <div class="home-sub">
+      <p class="sub1"><a href="home.html" class="l1">Get Started</a></p>
+      <p class="sub2"><a href="portfolio.html" class="l1">Portfolio</a></p>
+      <p class="sub3"><a href="Packages.html" class="l1">Packages</a></p>
+    </div>
+    <div class="home-sub-2">
+      <p class="sub4"><a href="services1.html" class="l1">Services</a></p>
+      <p class="sub5"><a href="projects.html" class="l1">Projects</a></p>
+      <p class="sub6"><a href="blog.html" class="l1">Blogs</a></p>
+    </div>
+    <div class="home-sub-3">
+      <p class="sub7"><a href="aboutUs.html" class="l1">About Us</a></p>
+      <p class="sub8"><a href="advertiserSupport.html" class="l1">Advertiser Support</a></p>
+      <p class="sub9"><a href="ContactUs.html" class="l1">Contact Us</a></p>
+    </div>
+  </div>
+
+  <button class="footer-sign"><a href="login.html">Sign In</a></button>
+  <button class="footer-join"><a href="join.html">Join</a></button>
+
+  <hr class="horizontal">
+
+  <div class="mail">
+    <img src="asserts2/footer/icons8-mail-50.png" class="footer-mail">
+    <p class="f-t-1">digitalwave2023@gmail.com / digitalwave123@yahoo.com</p>
+  </div>
+  <div class="address">
+    <img src="asserts2/footer/icons8-address-50.png" class="footer-address">
+    <p class="f-t-2">No. 119, Galle Road, Colombo 7</p>
+  </div>
+  <div class="phone">
+    <img src="asserts2/footer/icons8-phone-50.png" class="footer-phone">
+    <p class="f-t-3">011 - 2251197 / 091 - 2258978 / 070 - 4830006</p>
+  </div>
+
+  <!--Google Icons-->
+  <div class="acc-logo">
+    <a href="#" class="fa fa-facebook fa-2x"></a>
+    <a href="#" class="fa fa-twitter fa-2x"></a>
+    <a href="#" class="fa fa-google fa-2x"></a>
+    <a href="#" class="fa fa-linkedin fa-2x"></a>
+    <a href="#" class="fa fa-youtube fa-2x"></a>
+    <a href="#" class="fa fa-instagram fa-2x"></a>
+    <a href="#" class="fa fa-pinterest fa-2x"></a>
+    <a href="#" class="fa fa-snapchat-ghost fa-2x"></a>
+    <a href="#" class="fa fa-skype fa-2x"></a>
+  </div>
+
+  <img src="asserts2/footer/icons8-copyright-24.png" class="copy">
+  <p class="copyright">2023 DigitalWave | All Rights Reserved |</p>
+  <p class="pp"><a href="privacy.html">Privacy policy </a>|</p>
+  <p class="terms"><a href="terms.html">Terms of Use </a>|</p>
+  <p class="batch">SLIIT Y1S2 - MLB_04.01_07</p>
+</div>
+</body>
+</html>

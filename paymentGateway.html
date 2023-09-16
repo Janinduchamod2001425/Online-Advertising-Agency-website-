@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Gateway Page</title>
+
+  <!--Google Fonts-->
+  <link rel="stylesheet" href="paymentGateway.css">
+  <link rel="stylesheet" href="https://fonts.google.com/icons?icon.set=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Shadows%20Into%20Light">
+  <!-- Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="paymentGateway.js"></script>
+
+</head>
+<body>
+
+<!--header navigation panel-->
+<div class="header">
+  <!--logo-->
+  <div class="logo">
+    <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+  </div>
+  <div class="logo1"></div>
+
+
+  <!--navigation panel-->
+  <div class="nav-bar">
+    <a href="home.html" class="link">Home</a>
+    <a href="services1.html" class="link">Services</a>
+    <a href="projects.html" class="link">Projects</a>
+    <a href="aboutUs.html" class="link">About Us</a>
+    <a href="blog.html" class="link">Blog</a>
+    <a href="ContactUs.html" class="link">Contact Us</a>
+  </div>
+
+  <!--login & join buttons-->
+  <button class="join"><a href="join.html">Join</a></button>
+  <button class="login"><a href="login.html">Login</a></button>
+</div>
+
+<!--sub navigations & search bar-->
+<div class="header-2">
+
+  <!--search bar-->
+  <form action="">
+    <input type="text" class="search" placeholder="Enter what you want to search here">
+  </form>
+
+  <!--search button-->
+  <button type="submit" class="go">Search &nbsp;&nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" height="0.75em" viewBox="0 0 512 512">
+      <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6
+                457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3
+                0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0
+                208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0
+                0-288 144 144 0 1 0 0 288z"/>
+    </svg>
+  </button>
+
+  <div class="btn-set">
+    <button class="button1"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+    <div class="hide">Payment Gateway</div>
+    <button class="button2"><a href="Packages.html"><img src="images/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+    <div class="hide1">Packages</div>
+    <button class="button3"><a href="advertiserSupport.html"><img src="images/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+    <div class="hide2">Advertiser Support</div>
+    <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+    <div class="hide6">Portfolio</div>
+  </div>
+
+  <!--date and time-->
+  <p id="Date-Time" class="date"></p>
+</div>
+
+<script>
+  const dt = new Date();
+  document.getElementById("Date-Time").innerHTML = dt;
+</script>
+
+<div class="payment-gateway-background">
+  <img src="images/wallpaperflare.com_wallpaper%20(24).jpg" class="payment-bg">
+  <div class="pay-bg"></div>
+
+  <form action="paymentGateway.php" method="post">
+    <!-- Credit card Number Field -->
+    <label for="credit-card-number" class="cardNumber">Card Number:</label><br>
+    <p class="sub-line1">Enter the 16 - digit card number on the number</p>
+    <input type="text" class="name-bar1" name="card_number" id="credit-card-number" placeholder="xxxx - xxxx - xxxx - xxxx" required>
+
+    <!-- CVV number Field -->
+    <label for="cvv-number" class="cvvNumber">CVV Number:</label><br>
+    <p class="sub-line2">Enter the 3 or 4 - digit number on the number</p>
+    <input type="number" class="name-bar2" name="cvv_number" id="cvv-number" placeholder="xxx" required>
+
+    <!-- Date Field -->
+    <label class="expiry-date">Expiry Date:</label><br>
+    <p class="sub-line3">Enter the expiration date of the number</p>
+    <div class="date-field">
+      <div class="month">
+        <select name="expirationMonth" id="expirationMonth" required>
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+      </div>
+      <div class="year">
+        <select name="expirationYear" id="expirationYear" required>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Security Code -->
+    <label for="password" class="password">Password:</label><br>
+    <p class="sub-line4">Enter your dynamic password</p>
+    <input type="password" class="name-bar4" id="password" name="password" placeholder="Enter your account password" required>
+    <!-- An element to toggle between password visibility -->
+    <input type="checkbox" class="checkpw" id="checkpw" onclick="myFunction()">
+    <label for="checkpw" class="checkpwname">Show password</label>
+
+    <input type="submit" class="payNow" value="Pay Now" id="pay-now" onclick="confirmPayment()">
+  </form>
+
+  <script>
+    function confirmPayment() {
+      confirm("Are you sure you want to Pay! then click OK");
+    }
+  </script>
+
+
+  <!--Invoice Form-->
+
+  <form action="Packages.php" method="post" id="invoiceForm">
+    <div class="mobile-version">
+      <p class="package-name" id="package-name">Package Name:</p>
+      <p class="pna" id="pack-name"></p>
+      <p class="package-no" id="package-no">Package Price:</p>
+      <p class="pno" id="pack-price"></p>
+      <p class="duration" id="duration">Duration:</p>
+      <p class="du" id="pack-du"></p>
+      <p class="issue-date" id="issue-date">Date:</p>
+      <input type="date" id="issue-date1" name="issue-date1">
+    </div>
+
+    <script>
+      // set the current date as the default value
+      const dateInput = document.getElementById('issue-date1');
+      const currentDate = new Date().toISOString().split('T')[0];
+      dateInput.value = currentDate;
+    </script>
+
+
+    <script>
+      // JavaScript code to retrieve and display package details
+      window.addEventListener('DOMContentLoaded', displayPackageDetails);
+
+      function displayPackageDetails() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const packageName = urlParams.get('name');
+          const packagePrice = urlParams.get('price');
+          const packageDuration = urlParams.get('duration');
+
+          const packageNamesContainer = document.getElementById('pack-name');
+          const packagePriceContainer = document.getElementById('pack-price');
+          const packageDurationContainer = document.getElementById('pack-du');
+          const packageTotalAmountContainer = document.getElementById('total-price');
+
+        packageNamesContainer.innerHTML = `${packageName}`;
+        packagePriceContainer.textContent = `$${packagePrice}`;
+        packageDurationContainer.textContent = `${packageDuration}`;
+        packageTotalAmountContainer.textContent = `$${packagePrice}`;
+      }
+    </script>
+
+    <hr class="middle-line">
+
+    <div class="mobile-version2">
+      <p class="v2top">You have to pay</p>
+      <p class="total-amount" id="total-price"></p>
+      <input type="submit" value="Verify" class="verify-button" onclick="done()">
+    </div>
+
+    <div class="mobile-version3">
+      <img src="images/Payments/icons8-chip-card-35.png" class="sim">
+      <img src="images/Payments/icons8-wifi-38%20(1).png" class="wifi">
+      <p class="verify-message">You need to Enter your name & <br>click <span style="color: yellow;">verify button</span><br> to Generate an Invoice</p>
+      <!--client Name-->
+      <input type="text" class="namebar" name="clientName" id="clientName" placeholder="Enter your Name">
+      <!--<button id="mybtn" type="submit">Verify</button>-->
+      <p class="get-year" id="get-year"></p><p>/</p><p class="get-month" id="get-month"></p>
+      <br>
+    </div>
+  </form>
+</div>
+
+<script>
+  function done()
+  {
+      alert("Verifying Successfully!");
+  }
+</script>
+
+<!--Invoice form script-->
+<script>
+  // JavaScript code to handle form submission and send data to PHP script
+  const form = document.getElementById('invoiceForm');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const packageNameValue = document.getElementById('pack-name').textContent;
+    const packagePriceValue = document.getElementById('pack-price').textContent;
+    const packageDurationValue = document.getElementById('pack-du').textContent;
+    const packageTotalPriceValue = document.getElementById('total-price').textContent;
+    const clientNameValue = document.getElementById('clientName').value;
+    const issueDateValue = document.getElementById('issue-date1').value;
+
+    const formData = new FormData();
+    formData.append('name', packageNameValue);
+    formData.append('price', packagePriceValue);
+    formData.append('duration', packageDurationValue);
+    formData.append('total', packageTotalPriceValue);
+    formData.append('client', clientNameValue);
+    formData.append('date', issueDateValue);
+
+    fetch('Packages.php', {
+      method: 'POST',
+      body: formData
+    })
+            .then(response => response.text())
+            .then(result => {
+              console.log(result);
+              // Handle the response or perform any additional actions
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+  });
+
+</script>
+
+<script>
+  document.getElementById("mybtn").addEventListener("click", function ()
+  {
+    document.getElementById("get-year").innerHTML = document.getElementById("Year").value;
+  })
+</script>
+
+<script>
+  document.getElementById("mybtn").addEventListener("click", function ()
+  {
+    document.getElementById("get-month").innerHTML = document.getElementById("Month").value;
+  })
+</script>
+
+<script>
+  var input = document.getElementById("credit-card-number");
+
+  input.onkeydown = function () {
+    if (input.value.length > 0) {
+      if (input.value.length % 4 == 0) {
+        input.value += "    ";
+      }
+    }
+  }
+</script>
+
+<script>
+  function paymethodMethodSelect()
+  {
+      alert("You Select VisaCard");
+  }
+</script>
+
+<script>
+  function paymethodMethodSelect1()
+  {
+    alert("You Select MasterCard");
+  }
+</script>
+
+<!--popular payment gateways-->
+
+<div class="payment">
+    <p class="payment-topic">Payment Options</p>
+
+    <div class="payment1"><img src="images/PaymentOptions/icons8-visa-120.png"></div>
+    <div class="payment1"><img src="images/PaymentOptions/icons8-apple-pay-120.png"></div>
+    <div class="payment1"><img src="images/PaymentOptions/icons8-bitcoin-120.png"></div>
+    <div class="payment1"><img src="images/PaymentOptions/icons8-amazon-pay-120.png"></div>
+    <div class="payment1"><img src="images/PaymentOptions/icons8-paypal-120.png"></div>
+    <div class="payment1"><img src="images/PaymentOptions/icons8-mastercard-120.png"></div>
+
+    <br>
+
+    <div class="payment1"><img src="images/PaymentOptions/icons8-google-wallet-120.png"></div>
+    <div class="payment1"><img src="images/PaymentOptions/icons8-payoneer-120.png"></div>
+    <div class="payment1"><img src="images/PaymentOptions/icons8-paytm-120.png"></div>
+    <div class="payment1"><img src="images/PaymentOptions/icons8-shopify-120.png"></div>
+    <div class="payment1"><img src="images/PaymentOptions/icons8-unionpay-120.png"></div>
+    <div class="payment1"><img src="images/PaymentOptions/icons8-stripe-120.png"></div>
+
+</div>
+
+
+<!--customer-feedbacks-->
+
+<div class="customer-feedback">
+  <div class="feedback1">
+    <p class="f1">"Working with this online advertising agency
+      <br>was a game-changer for my business.
+      <br>Their targeted campaigns and strategic
+      <br>approach helped me reach my ideal
+      <br>audience and increase conversions.
+      <br>I highly recommend their services!"
+    </p>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <!--<span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>-->
+  </div>
+
+  <div class="feedback1">
+    <p class="f1">"The team at this advertising agency is exceptional. <br>They understood my goals and created tailored
+      <br>strategies that delivered impressive results. <br>Their expertise in digital marketing is evident, and <br>I'm grateful for the positive impact they've had on my business."
+    </p>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25%20(1).png"></div>
+  </div>
+
+  <div class="feedback1">
+    <p class="f1">"I can't say enough good things about this <br>online advertising agency. Their professionalism, creativity, and deep understanding of the digital landscape are unmatched. Thanks to their efforts, my brand has gained significant exposure, and my business has experienced substantial growth."
+    </p>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25.png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25%20(1).png"></div>
+    <div class="star-feed"><img src="images/Payments/icons8-star-25%20(1).png"></div>
+  </div>
+</div>
+
+<!--footer-->
+
+<div class="footer">
+  <div class="footer-logo">
+    <!--logo-->
+    <div class="logo">
+      <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+    </div>
+    <div class="logo1"></div>
+
+    <p class="fdes">The best digital advertisers in the world</p>
+
+    <div class="footer-btn-set">
+      <button class="button1"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+      <div class="hide3">Payment Gateway</div>
+      <button class="button2"><a href="Packages.html"><img src="images/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+      <div class="hide4">Packages</div>
+      <button class="button3"><a href="advertiserSupport.html"><img src="images/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+      <div class="hide5">Advertiser Support</div>
+      <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+      <div class="hide7">Portfolio</div>
+    </div>
+
+  </div>
+
+  <div class="navigate">
+    <div class="footer-links">
+      <p class="link1">Home</a></p>
+      <p class="link2">Content</a></p>
+      <p class="link3">Company</a></p>
+    </div>
+    <div class="home-sub">
+      <p class="sub1"><a href="home.html" class="l1">Get Started</a></p>
+      <p class="sub2"><a href="portfolio.html" class="l1">Portfolio</a></p>
+      <p class="sub3"><a href="Packages.html" class="l1">Packages</a></p>
+    </div>
+    <div class="home-sub-2">
+      <p class="sub4"><a href="services1.html" class="l1">Services</a></p>
+      <p class="sub5"><a href="projects.html" class="l1">Projects</a></p>
+      <p class="sub6"><a href="blog.html" class="l1">Blogs</a></p>
+    </div>
+    <div class="home-sub-3">
+      <p class="sub7"><a href="aboutUs.html" class="l1">About Us</a></p>
+      <p class="sub8"><a href="advertiserSupport.html" class="l1">Advertiser Support</a></p>
+      <p class="sub9"><a href="ContactUs.html" class="l1">Contact Us</a></p>
+    </div>
+  </div>
+
+  <button class="footer-sign"><a href="login.html">Sign In</a></button>
+  <button class="footer-join"><a href="join.html">Join</a></button>
+
+  <hr class="horizontal">
+
+  <div class="mail">
+    <img src="images/Logos/icons8-mail-50.png" class="footer-mail">
+    <p class="f-t-1">digitalwave2023@gmail.com / digitalwave123@yahoo.com</p>
+  </div>
+  <div class="address">
+    <img src="images/Logos/icons8-address-50.png" class="footer-address">
+    <p class="f-t-2">No. 119, Galle Road, Colombo 7</p>
+  </div>
+  <div class="phone">
+    <img src="images/Logos/icons8-phone-50.png" class="footer-phone">
+    <p class="f-t-3">011 - 2251197 / 091 - 2258978 / 070 - 4830006</p>
+  </div>
+
+  <div class="acc-logo">
+    <a href="#" class="fa fa-facebook fa-2x"></a>
+    <a href="#" class="fa fa-twitter fa-2x"></a>
+    <a href="#" class="fa fa-google fa-2x"></a>
+    <a href="#" class="fa fa-linkedin fa-2x"></a>
+    <a href="#" class="fa fa-youtube fa-2x"></a>
+    <a href="#" class="fa fa-instagram fa-2x"></a>
+    <a href="#" class="fa fa-pinterest fa-2x"></a>
+    <a href="#" class="fa fa-snapchat-ghost fa-2x"></a>
+    <a href="#" class="fa fa-skype fa-2x"></a>
+  </div>
+
+  <img src="images/footer-logos/icons8-copyright-24.png" class="copy">
+  <p class="copyright">2023 DigitalWave | All Rights Reserved |</p>
+  <p class="pp"><a href="privacy.html">Privacy policy </a>|</p>
+  <p class="terms"><a href="privacy.html">Terms of Use </a>|</p>
+  <p class="batch">SLIIT Y1S2 - MLB_04.01_07</p>
+</div>
+
+</body>
+</html>

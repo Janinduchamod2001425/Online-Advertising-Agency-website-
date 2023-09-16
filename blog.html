@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax Website</title>
+  <link rel="stylesheet" href="blog.css">
+
+  <!--google fonts-->
+  <link rel="stylesheet" href="https://fonts.google.com/icons?icon.set=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Shadows%20Into%20Light">
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!--header navigation panel-->
+<div class="header" id="header">
+  <!--logo-->
+  <div class="logo">
+    <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+  </div>
+  <div class="logo1"></div>
+
+
+  <!--navigation panel-->
+  <div class="nav-bar">
+    <a href="home.html" class="link">Home</a>
+    <a href="services1.html" class="link">Services</a>
+    <a href="projects.html" class="link">Projects</a>
+    <a href="aboutUs.html" class="link">About Us</a>
+    <a href="#" class="link active">Blog</a>
+    <a href="ContactUs.html" class="link">Contact Us</a>
+  </div>
+
+  <!--login & join buttons-->
+  <button class="join"><a href="join.html">Join</a></button>
+  <button class="login"><a href="login.html">Login</a></button>
+</div>
+
+<!--sub navigations & search bar-->
+<div class="header-2" id="header2">
+  <!--search bar-->
+  <form action="search.php" method="get">
+    <input type="text" class="search" name="query" placeholder="Enter what you want to search here">
+
+    <!--search button-->
+    <button type="submit" class="go">Search &nbsp;&nbsp;
+      <svg xmlns="http://www.w3.org/2000/svg" height="0.75em" viewBox="0 0 512 512">
+        <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6
+                457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3
+                0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0
+                208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0
+                0-288 144 144 0 1 0 0 288z"/>
+      </svg>
+    </button>
+  </form>
+
+
+
+  <div class="btn-set">
+    <button class="button1"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+    <div class="hide">Payment Gateway</div>
+    <button class="button2"><a href="Packages.html"><img src="images/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+    <div class="hide1">Packages</div>
+    <button class="button3"><a href="advertiserSupport.html"><img src="images/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+    <div class="hide2">Advertiser Support</div>
+    <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+    <div class="hide6">Portfolio</div>
+  </div>
+
+  <!--date and time-->
+  <p id="Date-Time" class="date"></p>
+</div>
+
+<!--Date script - w3schools-->
+<script>
+  const dt = new Date();
+  document.getElementById("Date-Time").innerHTML = dt;
+</script>
+
+<!--parallax body-->
+
+<section>
+  <img src="asserts/wallpaperflare.com_wallpaper%20(27).jpg" id="">
+  <img src="asserts/birds.png" id="birds" class="birds">
+  <h2 id="text"><span>DigitalWave</span><br>Blog</h2>
+  <img src="asserts/bird1.png" id="bird1">
+  <img src="asserts/bird2.png" id="bird2">
+  <!--<img src="forest.png" id="forest">-->
+  <a href="#" id="btn">EXPLORE</a>
+  <!--<img src="gaha.png" id="gaha" class="gaha">
+  <img src="gaha.png" id="gaha1" class="gaha1">-->
+  <img src="asserts/dear.png" id="dear" class="dear">
+  <img src="asserts/rocks.png" id="rocks">
+  <img src="asserts/water.png" id="water">
+</section>
+
+<!--Parallax effect script - w3schools-->
+
+<script>
+  let text = document.getElementById('text');
+  let bird1 = document.getElementById('bird1');
+  let bird2 = document.getElementById('bird2');
+  let birds = document.getElementById('birds');
+  let forest = document.getElementById('forest');
+  let dear = document.getElementById('dear');
+  let rocks = document.getElementById('rocks');
+  let water = document.getElementById('water');
+  let btn = document.getElementById('btn');
+  let header = document.getElementById('header');
+  let header2 = document.getElementById('header2');
+
+  window.addEventListener('scroll', function (){
+    let value = window.scrollY;
+
+    text.style.top = 40 + value * -1.5 + '%';
+    bird1.style.top = value * -1.5 + 'px';
+    bird1.style.left = value * 2 + 'px';
+    birds.style.left = value * 5 + 'px';
+    birds.style.top = value * 1 + 'px';
+    bird2.style.top = value * -1.5 + 'px';
+    bird2.style.left = value * -5 + 'px';
+    btn.style.marginTop = value * 1.5 + 'px';
+    btn.style.marginBottom = value * 2.5 + 'px';
+    dear.style.top = value * -0.12 + 'px';
+    rocks.style.top = value * -0.12 + 'px';
+    forest.style.top = value * 0.25 + 'px';
+    header.style.top = value * 0.5 + 'px';
+    header2.style.top = value * 0.5 + 'px';
+  })
+</script>
+
+
+<!--blog section-->
+<div class="sec">
+  <h1>Unleashing the Power of Online Advertising</h1>
+  <h3>Exploring the Latest Trends</h3>
+  <br>
+
+  <div class="slide-images">
+        <img class="mySlides" src="asserts/wallpaperflare.com_wallpaper%20(27).jpg">
+        <img class="mySlides" src="asserts/wallpaperflare.com_wallpaper%20(28).jpg">
+        <img class="mySlides" src="asserts/wallpaperflare.com_wallpaper%20(21).jpg">
+        <img class="mySlides" src="asserts/wallpaperflare.com_wallpaper%20(22).jpg">
+        <img class="mySlides" src="asserts/wallpaperflare.com_wallpaper%20(24).jpg">
+        <img class="mySlides" src="asserts/wallpaperflare.com_wallpaper%20(23).jpg">
+
+    <!--slide show function-->
+    <!--Slideshow script - w3schools-->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+    </script>
+  </div>
+</div>
+
+  <!--blog Posts-->
+<div class="blog-post-background">
+  <div class="post-name">Influencer Marketing</div>
+  <div class="post-name">Video Advertising and Storytelling</div>
+  <div class="post-name">Programmatic Advertising</div>
+
+  <div class="blog-post">
+    <img src="posts/set-drawings-with-desk-background.jpg" class="post-1">
+    <div class="overlay">
+      <div class="text">
+        Influencer marketing has emerged as a powerful strategy for businesses to tap into the trust and reach of influential individuals on social media platforms. Collaborating with influencers who align with their target audience allows businesses to effectively promote their products or services through authentic and relatable content. From micro-influencers to celebrities, businesses of all sizes are leveraging this trend to amplify brand awareness, foster credibility, and drive conversions.
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-post">
+    <img src="posts/collage-about-movie-time-with-man-megaphone.jpg" class="post-1">
+    <div class="overlay">
+      <div class="text">
+        Video advertising has gained significant traction in recent years, thanks to the proliferation of video-sharing platforms and improved internet speeds. Brands are embracing video ads to tell compelling stories, evoke emotions, and engage users. From engaging product demos to captivating storytelling, businesses are leveraging video advertising to create immersive experiences and leave a lasting impact on viewers.
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-post">
+    <img src="posts/social-media-marketing-concept-marketing-with-applications.jpg" class="post-1">
+    <div class="overlay">
+      <div class="text">
+        Programmatic advertising leverages artificial intelligence (AI) and automated processes to streamline ad buying and optimize campaign performance. By utilizing real-time data and algorithms, businesses can precisely target their audience across multiple platforms, optimizing ad delivery and maximizing return on investment. Programmatic advertising enables businesses to reach their target audience with precision and efficiency, making it accessible for organizations of all sizes to engage in sophisticated advertising campaigns.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--blog logos-->
+
+<div class="blog-logos">
+  <div class="bl"><img src="logo/icons8-news-100.png"></div>
+  <div class="bl"><img src="logo/icons8-case-study-100.png"></div>
+  <div class="bl"><img src="logo/icons8-product-100.png"></div>
+  <div class="bl"><img src="logo/icons8-tip-100.png"></div>
+  <div class="bl"><img src="logo/icons8-analysis-100.png"></div>
+</div>
+
+
+
+<!--Sub blogs-->
+
+<div class="sub">
+
+  <!--News and Updates-->
+  <p class="blog-topic">Industry News and Trends</p>
+  <div class="news">
+    <p>"The Rise of Voice Search and Its Implications for Online Advertising"</p>
+    <p>"How Artificial Intelligence is Revolutionizing Programmatic Advertising"</p>
+    <button class="see-more"><a href="https://www.google.com/search?q=industry+news+and+trends+in+sri+lanka&rlz=1C1CHWL_enLK1043LK1043&oq=Industry+News+and+Trends&aqs=chrome.1.69i57j33i160.2171j0j7&sourceid=chrome&ie=UTF-8" target="_blank">See more</a></button>
+  </div>
+  <br>
+  <hr class="hr">
+  <br>
+
+  <!--Case Studies and Success Stories-->
+  <p class="blog-topic">Case Studies and Success Stories</p>
+  <div class="news">
+    <p>"Case Study: Apple's Facebook Ad Campaign"</p>
+    <p>"Success Story: Audi's Viral Video Ad"</p>
+    <button class="see-more"><a href="https://www.google.com/search?q=Case+Studies+and+Success+Stories&rlz=1C1CHWL_enLK1043LK1043&sxsrf=APwXEddkber2dPAixac4kiW_xjGZOmWy1g%3A1686213505761&ei=gZOBZNXyLbjuseMPh4ue2AU&ved=0ahUKEwiVt5roorP_AhU4d2wGHYeFB1sQ4dUDCA8&uact=5&oq=Case+Studies+and+Success+Stories&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBggAEBYQHjIICAAQigUQhgMyCAgAEIoFEIYDMggIABCKBRCGAzIICAAQigUQhgMyCAgAEIoFEIYDOgcIIxDqAhAnOg0ILhDHARDRAxDqAhAnOhUILhADEI8BEOoCELQCEIwDEOUCGAE6FQgAEAMQjwEQ6gIQtAIQjAMQ5QIYAUoECEEYAFDjBFjjBGCGDmgBcAF4AIABlQGIAZUBkgEDMC4xmAEAoAEBoAECsAESwAEB2gEGCAEQARgL&sclient=gws-wiz-serp" target="_blank">See more</a></button>
+  </div>
+  <br>
+  <hr class="hr">
+  <br>
+
+  <!--Product or Service Updates-->
+  <p class="blog-topic">Product or Service Updates</p>
+  <div class="news">
+    <p id="ps">"Introducing Our New Analytics Dashboard: Gain Deeper Insights into Your Ad Campaign Performance"</p>
+    <p id="ps1">"Exciting Features Added to Our Mobile Ad Platform: Enhancing User Experience and Engagement"</p>
+    <button class="see-more"><a href="https://www.google.com/search?q=Product+or+Service+Updates&rlz=1C1CHWL_enLK1043LK1043&sxsrf=APwXEdeMTEEu2uH7TG9AfJ7Fl3Cj1kOA8A%3A1686213700659&ei=RJSBZK3cJ7fgseMPkOSZgAg&ved=0ahUKEwitjpLFo7P_AhU3cGwGHRByBoAQ4dUDCA8&uact=5&oq=Product+or+Service+Updates&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQoAE6BwgjEOoCECc6DQguEMcBENEDEOoCECc6FQguEAMQjwEQ6gIQtAIQjAMQ5QIYAToVCAAQAxCPARDqAhC0AhCMAxDlAhgBSgQIQRgAUIAHWIAHYIwNaAFwAXgAgAGmAYgBpgGSAQMwLjGYAQCgAQGgAQKwARLAAQHaAQYIARABGAs&sclient=gws-wiz-serp" target="_blank">See more</a></button>
+  </div>
+  <br>
+  <hr class="hr">
+  <br>
+
+  <!--Tips and Guides-->
+  <p class="blog-topic">Tips and Guides</p>
+  <div class="news">
+    <p>"A Step-by-Step Guide to Creating Engaging Video Ads on a Budget"</p>
+    <p>"10 Tips for Effective Targeting in Google Ads: Reaching the Right Audience"</p>
+    <button class="see-more"><a href="https://www.google.com/search?q=tips+and+guides+for+digital+marketing&rlz=1C1CHWL_enLK1043LK1043&sxsrf=APwXEdehfZnZCgexqAxldMSytsQ7bTrwEw%3A1686213772949&ei=jJSBZMvBOZPc4-EP-5u1yAI&oq=Tips+and+Guides+for+digital+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMgUIIRCgATIFCCEQoAEyBQghEKABOgcIIxDqAhAnOg0ILhDHARDRAxDqAhAnOhUIABADEI8BEOoCELQCEIwDEOUCGAE6FQguEAMQjwEQ6gIQtAIQjAMQ5QIYAToFCAAQgAQ6CAgAEIoFEIYDOgYIABAWEB5KBAhBGABQ0ANY6RxgrCVoAXABeACAAZYCiAHwEpIBBjAuMTIuMpgBAKABAaABArABEsABAdoBBggBEAEYCw&sclient=gws-wiz-serp" target="_blank">See more</a></button>
+  </div>
+  <br>
+  <hr class="hr">
+  <br>
+
+  <!--Analysis of Advertising Campaigns-->
+  <p class="blog-topic">Analysis of Advertising Campaigns</p>
+  <div class="news">
+    <p id="ps2">"Breaking Down the Success of Nike's 'Just Do It' Campaign: Lessons in Brand Storytelling"</p>
+    <p id="ps3">"Analyzing the Strategies Behind Company Z's Instagram Ad Campaign: What Worked and Why"</p>
+    <button class="see-more"><a href="https://www.google.com/search?q=Analysis+of+Advertising+Campaigns+of+digital+marketing&rlz=1C1CHWL_enLK1043LK1043&sxsrf=APwXEdfwslHGEXVZkDRw2pyoR9-IDdlKgA%3A1686213817111&ei=uZSBZNqpBsqM4-EP7p-foAc&ved=0ahUKEwia6tX8o7P_AhVKxjgGHe7PB3QQ4dUDCA8&uact=5&oq=Analysis+of+Advertising+Campaigns+of+digital+marketing&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICCEQoAEQwwQ6CggAEEcQ1gQQsAM6CgghEKABEMMEEApKBAhBGABQgBZYkSRgoiloAXABeACAAekBiAG5B5IBBTAuNC4xmAEAoAECoAEBwAEByAEI&sclient=gws-wiz-serp" target="_blank">See more</a></button>
+  </div>
+  <br>
+</div>
+
+<!--footer-->
+<div class="footer">
+  <div class="footer-logo">
+    <!--logo-->
+    <div class="logo">
+      <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+    </div>
+    <div class="logo1"></div>
+
+    <p class="fdes">The best digital advertisers in the world</p>
+
+    <div class="footer-btn-set">
+      <button class="button1"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+      <div class="hide3">Payment Gateway</div>
+      <button class="button2"><a href="Packages.html"><img src="images/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+      <div class="hide4">Packages</div>
+      <button class="button3"><a href="advertiserSupport.html"><img src="images/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+      <div class="hide5">Advertiser Support</div>
+      <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+      <div class="hide7">Portfolio</div>
+    </div>
+
+  </div>
+
+  <div class="navigate">
+    <div class="footer-links">
+      <p class="link1">Home</a></p>
+      <p class="link2">Content</a></p>
+      <p class="link3">Company</a></p>
+    </div>
+    <div class="home-sub">
+      <p class="sub1"><a href="home.html" class="l1">Get Started</a></p>
+      <p class="sub2"><a href="portfolio.html" class="l1">Portfolio</a></p>
+      <p class="sub3"><a href="Packages.html" class="l1">Packages</a></p>
+    </div>
+    <div class="home-sub-2">
+      <p class="sub4"><a href="services1.html" class="l1">Services</a></p>
+      <p class="sub5"><a href="projects.html" class="l1">Projects</a></p>
+      <p class="sub6"><a href="#" class="l1">Blogs</a></p>
+    </div>
+    <div class="home-sub-3">
+      <p class="sub7"><a href="aboutUs.html" class="l1">About Us</a></p>
+      <p class="sub8"><a href="advertiserSupport.html" class="l1">Advertiser Support</a></p>
+      <p class="sub9"><a href="ContactUs.html" class="l1">Contact Us</a></p>
+    </div>
+  </div>
+
+  <button class="footer-sign"><a href="login.html">Sign In</a></button>
+  <button class="footer-join"><a href="join.html">Join</a></button>
+
+  <hr class="horizontal">
+
+  <div class="mail">
+    <img src="images/Logos/icons8-mail-50.png" class="footer-mail">
+    <p class="f-t-1">digitalwave2023@gmail.com / digitalwave123@yahoo.com</p>
+  </div>
+  <div class="address">
+    <img src="images/Logos/icons8-address-50.png" class="footer-address">
+    <p class="f-t-2">No. 119, Galle Road, Colombo 7</p>
+  </div>
+  <div class="phone">
+    <img src="images/Logos/icons8-phone-50.png" class="footer-phone">
+    <p class="f-t-3">011 - 2251197 / 091 - 2258978 / 070 - 4830006</p>
+  </div>
+
+  <!--Google icons-->
+  <div class="acc-logo">
+    <a href="#" class="fa fa-facebook fa-2x"></a>
+    <a href="#" class="fa fa-twitter fa-2x"></a>
+    <a href="#" class="fa fa-google fa-2x"></a>
+    <a href="#" class="fa fa-linkedin fa-2x"></a>
+    <a href="#" class="fa fa-youtube fa-2x"></a>
+    <a href="#" class="fa fa-instagram fa-2x"></a>
+    <a href="#" class="fa fa-pinterest fa-2x"></a>
+    <a href="#" class="fa fa-snapchat-ghost fa-2x"></a>
+    <a href="#" class="fa fa-skype fa-2x"></a>
+  </div>
+
+  <img src="images/footer-logos/icons8-copyright-24.png" class="copy">
+  <p class="copyright">2023 DigitalWave | All Rights Reserved |</p>
+  <p class="pp"><a href="privacy.html">Privacy policy </a>|</p>
+  <p class="terms"><a href="terms.html">Terms of Use </a>|</p>
+  <p class="batch">SLIIT Y1S2 - MLB_04.01_07</p>
+</div>
+
+
+</body>
+</html>

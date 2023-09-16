@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Advertising Agency Home Page</title>
+  <link rel="stylesheet" href="aboutUs.css">
+  <link rel="stylesheet" href="https://fonts.google.com/icons?icon.set=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Shadows%20Into%20Light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!--header navigation panel-->
+<div class="header">
+  <!--logo-->
+  <div class="logo">
+    <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+  </div>
+  <div class="logo1"></div>
+
+
+  <!--navigation panel-->
+  <div class="nav-bar">
+    <a href="home.html" class="link">Home</a>
+    <a href="services1.html" class="link">Services</a>
+    <a href="projects.html" class="link">Projects</a>
+    <a href="#" class="link active">About Us</a>
+    <a href="blog.html" class="link">Blog</a>
+    <a href="ContactUs.html" class="link">Contact Us</a>
+  </div>
+
+  <!--login & join buttons-->
+  <button class="join"><a href="join.html">Join</a></button>
+  <button class="login"><a href="login.html">Login</a></button>
+</div>
+
+<!--sub navigations & search bar-->
+<div class="header-2">
+  <!--search bar-->
+  <form action="">
+    <input type="text" class="search" placeholder="Enter what you want to search here">
+  </form>
+
+  <!--search button-->
+  <button type="submit" class="go">Search &nbsp;&nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" height="0.75em" viewBox="0 0 512 512">
+      <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6
+                457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3
+                0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0
+                208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0
+                0-288 144 144 0 1 0 0 288z"/>
+    </svg>
+  </button>
+
+  <div class="btn-set">
+    <button class="button1"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+    <div class="hide">Payment Gateway</div>
+    <button class="button2"><a href="Packages.html"><img src="images/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+    <div class="hide1">Packages</div>
+    <button class="button3"><a href="advertiserSupport.html"><img src="images/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+    <div class="hide2">Advertiser Support</div>
+    <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+    <div class="hide6">Portfolio</div>
+  </div>
+
+  <!--date and time-->
+  <p id="Date-Time" class="date"></p>
+</div>
+
+<!--Date script - w3schools-->
+<script>
+  const dt = new Date();
+  document.getElementById("Date-Time").innerHTML = dt;
+</script>
+
+<div class="hero">
+  <img src="images/wallpaperflare.com_wallpaper%20(29).jpg" class="hero-image">
+
+  <p class="aboutUsTopic">AB<span style="color: #A8DADC; font-size: 90px; font-family: 'IBM Plex Mono', monospace">O</span>UT US</p>
+
+  <div class="introduction">
+      <p class="intro-description1">Welcome To our Agency</p>
+      <br>
+      <p class="intro-description2">We are a passionate team of digital marketing experts dedicated to helping businesses thrive in the online world.
+        <br>With a deep understanding of the ever-changing landscape of digital advertising, <br>we leverage cutting-edge strategies and innovative techniques to drive targeted traffic,
+        <br>increase brand visibility, and maximize your return on investment.
+      </p>
+      <br>
+      <p class="intro-description3">At our agency, we believe that every business has unique goals and challenges,
+        <br>which is why we take a personalized approach to every client.
+        <br>We work closely with you to understand your specific needs and develop tailored
+        <br>advertising campaigns that align with your objectives. Our team consists of experienced professionals
+        <br>who are well-versed in various digital platforms, including search engines, social media, display networks, and more.
+      </p>
+      <br>
+      <p class="intro-description4">Contact us today to embark on a digital advertising journey that will transform
+        <br>your business and unlock its full potential in the online world.
+      </p>
+
+  </div>
+
+  <p class="Feedback">“Good marketing makes the company look smart. <br> <span style="color: #A8DADC">Great marketing makes the customer feel smart.”</span> </p>
+  <p class="author">- Joe Chernov -</p>
+
+</div>
+
+<div class="our-services">
+  <p class="ser-topic">Our Popular Services</p>
+  <div class="service1">
+    <img src="images/Services/service1.png" class="service-image">
+    <div class="overlay">
+        <div class="text">Search Engine Optimization <br>(SEO)</div>
+    </div>
+  </div>
+  <div class="service1">
+    <img src="images/Services/service2.png" class="service-image">
+    <div class="overlay">
+      <div class="text">Pay-Per-Click Advertising <br>(PPC)</div>
+    </div>
+  </div>
+  <div class="service1">
+    <img src="images/Services/service3.png" class="service-image">
+    <div class="overlay">
+      <div class="text">Social Media Advertising</div>
+    </div>
+  </div>
+  <div class="service1">
+    <img src="images/Services/service4.png" class="service-image">
+    <div class="overlay">
+      <div class="text">Display Advertising</div>
+    </div>
+  </div>
+  <div class="service1">
+    <img src="images/Services/service5.png" class="service-image">
+    <div class="overlay">
+      <div class="text">Email Marketing</div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="service1">
+    <img src="images/Services/service6.png" class="service-image">
+    <div class="overlay">
+      <div class="text">Content Marketing</div>
+    </div>
+  </div>
+  <div class="service1">
+    <img src="images/Services/service7.png" class="service-image">
+    <div class="overlay">
+      <div class="text">Mobile Advertising</div>
+    </div>
+  </div>
+  <div class="service1">
+    <img src="images/Services/service8.png" class="service-image">
+    <div class="overlay">
+      <div class="text">Conversion Rate Optimization <br>(CRO)</div>
+    </div>
+  </div>
+  <div class="service1">
+    <img src="images/Services/service9.png" class="service-image">
+    <div class="overlay">
+      <div class="text">Remarketing</div>
+    </div>
+  </div>
+  <div class="service1">
+    <img src="images/Services/service10.png" class="service-image">
+    <div class="overlay">
+      <div class="text">Analytics and Reporting</div>
+    </div>
+  </div>
+</div>
+
+<div class="about-quote">
+  <h1 class="quote-1">“When creating content, be the best answer on the internet.”</h1>
+  <h3 class="author-1">- Andy Crestodina -</h3>
+</div>
+
+<div class="our-team">
+  <p class="team-topic">Meet Our Team</p>
+  <div class="member">
+    <img src="images/Team/business-people-round-avatars-vector-modified%20(5).png" class="member-image">
+    <div class="names">
+      <p class="member-name">Mr. Janindu Chamod</p>
+    </div>
+    <hr class="break">
+    <div class="job">
+      <p class="job-title">Digital Marketing Manager</p>
+    </div>
+    <p class="descrip">
+      Responsible for developing
+      <br>and executing digital
+      <br>marketing strategies,
+      <br>overseeing campaigns,
+      <br>analyzing performance metrics,
+      <br>and driving overall
+      <br>online marketing efforts
+      <br>to achieve business goals.
+    </p>
+    <div class="profile1"><img src="images/profile/linkedin.png" class="linkedin"></div>
+    <div class="profile2"><img src="images/profile/email.png" class="email"></div>
+    <div class="profile3"><img src="images/profile/twitter.png" class="twitter"></div>
+  </div>
+  <div class="member">
+    <img src="images/Team/business-people-round-avatars-vector-modified%20(9).png" class="member-image">
+    <div class="names">
+      <p class="member-name">Mrs. Emily Thompson</p>
+    </div>
+    <hr class="break">
+    <div class="job">
+      <p class="job-title">Creative Director</p>
+    </div>
+    <p class="descrip">
+      Leads the creative team,
+      <br>oversees the development of
+      <br>visual and multimedia content,
+      <br>ensures brand consistency,
+      <br>and provides creative
+      <br>direction for advertising
+      <br>campaigns, websites,
+      <br>and other marketing materials.
+    </p>
+    <div class="profile1"><img src="images/profile/linkedin.png" class="linkedin"></div>
+    <div class="profile2"><img src="images/profile/email.png" class="email"></div>
+    <div class="profile3"><img src="images/profile/facebook.png" class="facebook"></div>
+  </div>
+  <div class="member">
+    <img src="images/Team/business-people-round-avatars-vector-modified%20(8).png" class="member-image">
+    <div class="names">
+      <p class="member-name">Mr. David Patel</p>
+    </div>
+    <hr class="break">
+    <div class="job">
+      <p class="job-title">Social Media Manager</p>
+    </div>
+    <p class="descrip">
+      Develops and implements
+      <br>social media marketing strategies,
+      <br>manages social media accounts,
+      <br>creates engaging content,
+      <br>interacts with the audience, and monitors social
+      <br>media analytics to enhance brand
+      <br>presence and engagement.
+    </p>
+    <div class="profile1"><img src="images/profile/facebook.png" class="facebook"></div>
+    <div class="profile2"><img src="images/profile/youtube.png" class="youTube"></div>
+    <div class="profile3"><img src="images/profile/tiktok.png" class="tiktok"></div>
+  </div>
+
+  <br>
+
+  <div class="member">
+    <img src="images/Team/business-people-round-avatars-vector-modified%20(2).png" class="member-image">
+    <div class="names">
+      <p class="member-name">Mrs. Sophia Rodriguez</p>
+    </div>
+    <hr class="break">
+    <div class="job">
+      <p class="job-title">Email Marketing Specialist</p>
+    </div>
+    <p class="descrip">
+      Designs and executes email
+      <br>marketing campaigns, develops
+      <br>targeted email lists,
+      <br>creates engaging email content,
+      <br>tracks email performance metrics,
+      <br>and implements strategies
+      <br>to increase open
+      <br>rates and conversions.
+    </p>
+    <div class="profile1"><img src="images/profile/linkedin.png" class="linkedin"></div>
+    <div class="profile2"><img src="images/profile/email.png" class="email"></div>
+    <div class="profile3"><img src="images/profile/twitter.png" class="twitter"></div>
+  </div>
+  <div class="member">
+    <img src="images/Team/business-people-round-avatars-vector-modified%20(3).png" class="member-image">
+    <div class="names">
+      <p class="member-name">Mr. Matthew Roberts</p>
+    </div>
+    <hr class="break">
+    <div class="job">
+      <p class="job-title">Content Marketing Specialist</p>
+    </div>
+    <p class="descrip">
+      Creates and promotes
+      <br>compelling content across various channels, such as blogs,
+      <br>articles, videos, and
+      <br>infographics, to attract
+      <br>and engage the target audience, increase brand awareness, and drive website traffic.
+    </p>
+    <div class="profile1"><img src="images/profile/twitter.png" class="twitter"></div>
+    <div class="profile2"><img src="images/profile/email.png" class="email"></div>
+    <div class="profile3"><img src="images/profile/instagram.png" class="instagram"></div>
+  </div>
+  <div class="member">
+    <img src="images/Team/business-people-round-avatars-vector-modified%20(1).png" class="member-image">
+    <div class="names">
+      <p class="member-name">Mis. Natalie Foster</p>
+    </div>
+    <hr class="break">
+    <div class="job">
+      <p class="job-title">Account Manager</p>
+    </div>
+    <p class="descrip">
+      Builds and maintains client
+      <br>relationships, serves
+      <br>as the main point of contact for clients, develops and executes marketing strategies aligned with client goals, manages project timelines, and ensures client satisfaction.
+    </p>
+    <div class="profile1"><img src="images/profile/linkedin.png" class="linkedin"></div>
+    <div class="profile2"><img src="images/profile/email.png" class="email"></div>
+    <div class="profile3"><img src="images/profile/facebook.png" class="facebook"></div>
+  </div>
+</div>
+
+<div class="partners">
+  <p class="partners-topic">Affiliated Partners</p>
+
+  <div class="partner1"><img src="images/partners/icons8-facebook-120.png"></div>
+  <div class="partner1"><img src="images/partners/icons8-adobe-photoshop-120.png"></div>
+  <div class="partner1"><img src="images/partners/icons8-bing-120.png"></div>
+  <div class="partner1"><img src="images/partners/icons8-chatgpt-120.png"></div>
+  <div class="partner1"><img src="images/partners/icons8-google-ads-120.png"></div>
+  <div class="partner1"><img src="images/partners/icons8-pinterest-120.png"></div>
+</div>
+
+<div class="CU">
+  <p class="c1">Transparency and communication are also key values for us. We provide regular updates and detailed reports, keeping you informed about the progress of
+    <br>your campaigns and the impact on your business. Our team is always available to answer your questions, address concerns, and provide strategic guidance to help
+    <br>you stay ahead in the competitive digital landscape.
+    Whether you're a small startup or an established enterprise, we have the expertise and resources to propel your online presence to new heights. Our goal is to become your trusted partner, working hand in hand with you to achieve your business objectives and drive sustainable growth.
+  </p>
+  <p class="joinWithUS">- Join With Us -</p>
+  <img src="images/Contact/icons8-whatsapp-50.png" class="whatsapp">
+  <img src="images/Contact/icons8-man-on-phone-50.png" class="call">
+  <img src="images/Contact/icons8-gmail-logo-50.png" class="E">
+</div>
+
+<!--Footer-->
+<div class="footer">
+  <div class="footer-logo">
+    <!--logo-->
+    <div class="logo">
+      <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+    </div>
+    <div class="logo1"></div>
+
+    <p class="fdes">The best digital advertisers in the world</p>
+
+    <div class="footer-btn-set">
+      <button class="button1"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+      <div class="hide3">Payment Gateway</div>
+      <button class="button2"><a href="Packages.html"><img src="images/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+      <div class="hide4">Packages</div>
+      <button class="button3"><a href="advertiserSupport.html"><img src="images/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+      <div class="hide5">Advertiser Support</div>
+      <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+      <div class="hide7">Portfolio</div>
+    </div>
+
+  </div>
+
+  <div class="navigate">
+    <div class="footer-links">
+      <p class="link1">Home</a></p>
+      <p class="link2">Content</a></p>
+      <p class="link3">Company</a></p>
+    </div>
+    <div class="home-sub">
+      <p class="sub1"><a href="home.html" class="l1">Get Started</a></p>
+      <p class="sub2"><a href="portfolio.html" class="l1">Portfolio</a></p>
+      <p class="sub3"><a href="Packages.html" class="l1">Packages</a></p>
+    </div>
+    <div class="home-sub-2">
+      <p class="sub4"><a href="services1.html" class="l1">Services</a></p>
+      <p class="sub5"><a href="projects.html" class="l1">Projects</a></p>
+      <p class="sub6"><a href="blog.html" class="l1">Blogs</a></p>
+    </div>
+    <div class="home-sub-3">
+      <p class="sub7"><a href="#" class="l1">About Us</a></p>
+      <p class="sub8"><a href="advertiserSupport.html" class="l1">Advertiser Support</a></p>
+      <p class="sub9"><a href="ContactUs.html" class="l1">Contact Us</a></p>
+    </div>
+  </div>
+
+  <button class="footer-sign"><a href="login.html">Sign In</a></button>
+  <button class="footer-join"><a href="join.html">Join</a></button>
+
+  <hr class="horizontal">
+
+  <div class="mail">
+    <img src="images/Logos/icons8-mail-50.png" class="footer-mail">
+    <p class="f-t-1">digitalwave2023@gmail.com / digitalwave123@yahoo.com</p>
+  </div>
+  <div class="address">
+    <img src="images/Logos/icons8-address-50.png" class="footer-address">
+    <p class="f-t-2">No. 119, Galle Road, Colombo 7</p>
+  </div>
+  <div class="phone">
+    <img src="images/Logos/icons8-phone-50.png" class="footer-phone">
+    <p class="f-t-3">011 - 2251197 / 091 - 2258978 / 070 - 4830006</p>
+  </div>
+
+  <div class="acc-logo">
+    <a href="#" class="fa fa-facebook fa-2x"></a>
+    <a href="#" class="fa fa-twitter fa-2x"></a>
+    <a href="#" class="fa fa-google fa-2x"></a>
+    <a href="#" class="fa fa-linkedin fa-2x"></a>
+    <a href="#" class="fa fa-youtube fa-2x"></a>
+    <a href="#" class="fa fa-instagram fa-2x"></a>
+    <a href="#" class="fa fa-pinterest fa-2x"></a>
+    <a href="#" class="fa fa-snapchat-ghost fa-2x"></a>
+    <a href="#" class="fa fa-skype fa-2x"></a>
+  </div>
+
+  <img src="images/footer-logos/icons8-copyright-24.png" class="copy">
+  <p class="copyright">2023 DigitalWave | All Rights Reserved |</p>
+  <p class="pp"><a href="privacy.html">Privacy policy </a>|</p>
+  <p class="terms"><a href="terms.html">Terms of Use </a>|</p>
+  <p class="batch">SLIIT Y1S2 - MLB_04.01_07</p>
+</div>
+
+</body>
+</html>

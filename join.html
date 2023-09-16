@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Page</title>
+
+    <link rel="stylesheet" href="join.css">
+
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.google.com/icons?icon.set=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Shadows%20Into%20Light">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="join.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <!--logo-->
+    <div class="logo">
+        <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+    </div>
+    <div class="logo1"></div>
+
+
+    <!--navigation panel-->
+    <div class="nav-bar">
+        <a href="home.html" class="link">Home</a>
+        <a href="services1.html" class="link">Services</a>
+        <a href="projects.html" class="link">Projects</a>
+        <a href="aboutUs.html" class="link">About Us</a>
+        <a href="blog.html" class="link">Blog</a>
+        <a href="ContactUs.html" class="link">Contact Us</a>
+    </div>
+
+    <!--login & join buttons-->
+    <button class="join active"><a href="#">Join</a></button>
+    <button class="login"><a href="login.html">Login</a></button>
+</div>
+
+<!--sub navigations & search bar-->
+<div class="header-2">
+    <!--search bar-->
+    <form action="">
+        <input type="text" class="search" placeholder="Enter what you want to search here">
+    </form>
+
+    <!--search button-->
+    <button type="submit" class="go">Search &nbsp;&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" height="0.75em" viewBox="0 0 512 512">
+            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6
+                457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3
+                0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0
+                208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0
+                0-288 144 144 0 1 0 0 288z"/>
+        </svg>
+    </button>
+
+    <div class="btn-set">
+        <button class="button1"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+        <div class="hide">Payment Gateway</div>
+        <button class="button2"><a href="Packages.html"><img src="images/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+        <div class="hide1">Packages</div>
+        <button class="button3"><a href="advertiserSupport.html"><img src="images/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+        <div class="hide2">Advertiser Support</div>
+        <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+        <div class="hide6">Portfolio</div>
+    </div>
+
+    <!--date and time-->
+    <p id="Date-Time" class="date"></p>
+</div>
+
+<!--Date function - W3schools-->
+<script>
+    const dt = new Date();
+    document.getElementById("Date-Time").innerHTML = dt;
+</script>
+
+<div class="background-image">
+    <img src="images/wallpaperflare.com_wallpaper%20(19).jpg" class="bg-img">
+    <div class="register-from"></div>
+
+    <!--Registration Form-->
+    <form action="join.php" method="post">
+
+        <p class="reg-title">Registration Form</p>
+
+        <label for="name" class="name">Name:</label><br>
+        <input type="text" class="name-bar1" name="name" id="name" placeholder="Enter Full name" required>
+        <br><br>
+        <label for="email" class="email">Email:</label><br>
+        <input type="email" class="name-bar2" name="email" id="email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="country" class="country">Country:</label><br>
+        <input type="text" class="name-bar3" name="country" id="country" placeholder="Enter your Country" required>
+        <br><br>
+        <label for="password" class="password">Password:</label><br>
+        <input type="password" class="name-bar4" name="password" id="password" onkeyup='check();' placeholder="Enter your password" required>
+        <!-- An element to toggle between password visibility -->
+        <input type="checkbox" class="checkpw" id="checkpw" onclick="myFunction()">
+        <label for="checkpw" class="checkpwname">Show password</label>
+
+        <label for="position" class="position">Job Title:</label><br>
+        <input type="text" class="name-bar5" name="position" id="position" placeholder="Enter your position" required>
+        <br><br>
+        <label for="number" class="number">Phone Number:</label><br>
+        <input type="number" class="name-bar6" name="phone_number" id="number" placeholder="Enter phone number" required>
+        <br><br>
+        <label for="city" class="city">City:</label><br>
+        <input type="text" class="name-bar7" name="city" id="city" placeholder="Enter your city" required>
+        <br><br>
+        <label for="password2" class="password2">Confirm Password:</label><br>
+        <input type="password" class="name-bar8" name="confirm_password" id="password2" onkeyup='check();' placeholder="Confirm your password" required>
+        <input type="checkbox" class="checkpw2" id="checkpw2" onclick="myFunctionConfirm()">
+        <label for="checkpw2" class="checkconfirmpwname">Show password</label>
+
+        <br><br>
+        <label class="gender">Gender:</label><br>
+        <input type="radio" class="radio1" name="gender" id="Male" value="male" required>
+        <label class="male">Male</label>
+        <input type="radio" class="radio2" name="gender" id="Female" value="female" required>
+        <label class="female">Female</label>
+        <br><br>
+        <input type="checkbox" required id="terms_conditions"><p class="termsconditions">I agree to digitalWave <a href="terms.html"><span style="color: #5ac62e; font-style: italic;">Terms of service</span></a> and <a href="privacy.html"><span style="color: #00aff0; font-style: italic;">Privacy policy</span></a></p>
+        <input type="submit" value="Register" name="save" class="reg-btn" onclick="confirmationMessage()">
+        <p class="have-acc">Already have an account? &nbsp; <a href="login.html"><span style="color: #E63946; font-style: italic;">Sign in</span></a></p>
+    </form>
+
+    <!--check password validation-->
+    <p id="message" class="checking"></p>
+
+    <!--Check if password is same with confirm_password-->
+
+    <script>
+        var check = function() {
+            if (document.getElementById('password').value == document.getElementById('password2').value) {
+                document.getElementById('message').style.color = 'lightgreen';
+                document.getElementById('message').innerHTML = 'matching';
+            } else {
+                document.getElementById('message').style.color = 'red';
+                document.getElementById('message').innerHTML = 'not matching';
+            }
+        }
+    </script>
+
+    <!--Confirmation message for submit Details-->
+    <script>
+        function confirmationMessage() {
+            var result = window.confirm("Are you sure you want to submit these details?");
+
+            if (result) {
+                // Perform AJAX request to check if email is already registered.
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'join.php', true);
+                xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                        var response = xhr.responseText;
+                        if (response === 'already_registered') {
+                            alert('Email already registered. Please choose an alternative email or try logging in.');
+                        } else {
+                            alert('You have successfully registered to DigitalWave! :)');
+                        }
+                    }
+                };
+            } else {
+                alert('Registration aborted.');
+            }
+
+            /*if (result) {
+                alert("You Successfully Registered to DigitalWave! :) ");
+            } else {
+                alert("Abort the registration");
+            }*/
+        }
+    </script>
+
+    <!--Show password-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+    <!--Show confirm password-->
+    <script>
+        function myFunctionConfirm() {
+            var y = document.getElementById("password2");
+            if (y.type === "password") {
+                y.type = "text";
+            } else {
+                y.type = "password";
+            }
+        }
+    </script>
+</div>
+
+<div class="Quotes">
+    <h1 class="quote-1">“Business has only two functions- marketing and innovation.”</h1>
+    <h3 class="author-1">- Milan Kundera -</h3>
+</div>
+
+<div class="footer">
+    <div class="footer-logo">
+        <!--logo-->
+        <div class="logo">
+            <p class="logo-name"><a href="home.html"><span style="font-weight: bolder; font-size: 47px;">D</span><span style="color: #F1FAEE">i</span>gital<span style="color: #E63946">Wave</span></a></p>
+        </div>
+        <div class="logo1"></div>
+
+        <p class="fdes">The best digital advertisers in the world</p>
+
+        <div class="footer-btn-set">
+            <button class="button1"><a href="paymentGateway.html"><img src="images/Header-btn/icons8-shopping-cart-48.png" class="btn1"></a></button>
+            <div class="hide3">Payment Gateway</div>
+            <button class="button2"><a href="Packages.html"><img src="images/Header-btn/icons8-package-48.png" class="btn1"></a></button>
+            <div class="hide4">Packages</div>
+            <button class="button3"><a href="advertiserSupport.html"><img src="images/Header-btn/icons8-man-48.png" class="btn1"></a></button>
+            <div class="hide5">Advertiser Support</div>
+            <button class="button4"><a href="portfolio.html"><img src="images/Header-btn/icons8-paint-48.png" class="btn1"></a></button>
+            <div class="hide7">Portfolio</div>
+        </div>
+
+    </div>
+
+    <div class="navigate">
+        <div class="footer-links">
+            <p class="link1">Home</a></p>
+            <p class="link2">Content</a></p>
+            <p class="link3">Company</a></p>
+        </div>
+        <div class="home-sub">
+            <p class="sub1"><a href="home.html" class="l1">Get Started</a></p>
+            <p class="sub2"><a href="portfolio.html" class="l1">Sponsors</a></p>
+            <p class="sub3"><a href="Packages.html" class="l1">Packages</a></p>
+        </div>
+        <div class="home-sub-2">
+            <p class="sub4"><a href="services1.html" class="l1">Services</a></p>
+            <p class="sub5"><a href="projects.html" class="l1">Projects</a></p>
+            <p class="sub6"><a href="blog.html" class="l1">Blogs</a></p>
+        </div>
+        <div class="home-sub-3">
+            <p class="sub7"><a href="aboutUs.html" class="l1">About Us</a></p>
+            <p class="sub8"><a href="advertiserSupport.html" class="l1">Advertiser Support</a></p>
+            <p class="sub9"><a href="ContactUs.html" class="l1">Contact Us</a></p>
+        </div>
+    </div>
+
+    <button class="footer-sign"><a href="login.html">Sign In</a></button>
+    <button class="footer-join"><a href="terms.html">Join</a></button>
+
+    <hr class="horizontal">
+
+    <div class="mail">
+        <img src="images/Logos/icons8-mail-50.png" class="footer-mail">
+        <p class="f-t-1">digitalwave2023@gmail.com / digitalwave123@yahoo.com</p>
+    </div>
+    <div class="address">
+        <img src="images/Logos/icons8-address-50.png" class="footer-address">
+        <p class="f-t-2">No. 119, Galle Road, Colombo 7</p>
+    </div>
+    <div class="phone">
+        <img src="images/Logos/icons8-phone-50.png" class="footer-phone">
+        <p class="f-t-3">011 - 2251197 / 091 - 2258978 / 070 - 4830006</p>
+    </div>
+
+    <!--Google - Icons-->
+    <div class="acc-logo">
+        <a href="#" class="fa fa-facebook fa-2x"></a>
+        <a href="#" class="fa fa-twitter fa-2x"></a>
+        <a href="#" class="fa fa-google fa-2x"></a>
+        <a href="#" class="fa fa-linkedin fa-2x"></a>
+        <a href="#" class="fa fa-youtube fa-2x"></a>
+        <a href="#" class="fa fa-instagram fa-2x"></a>
+        <a href="#" class="fa fa-pinterest fa-2x"></a>
+        <a href="#" class="fa fa-snapchat-ghost fa-2x"></a>
+        <a href="#" class="fa fa-skype fa-2x"></a>
+    </div>
+
+    <img src="images/footer-logos/icons8-copyright-24.png" class="copy">
+    <p class="copyright">2023 DigitalWave | All Rights Reserved |</p>
+    <p class="pp"><a href="privacy.html">Privacy policy </a>|</p>
+    <p class="terms"><a href="terms.html">Terms of Use </a>|</p>
+    <p class="batch">SLIIT Y1S2 - MLB_04.01_07</p>
+</div>
+
+</body>
+</html>

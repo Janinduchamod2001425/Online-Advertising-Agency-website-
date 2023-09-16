@@ -1,0 +1,179 @@
+body{
+    background: rgb(168,218,220);
+    background: radial-gradient(circle, rgba(168,218,220,1) 49%, rgba(69,123,157,1) 53%, rgba(6,14,25,1) 56%);
+    font-family: Calibri;
+}
+
+video{
+    position: absolute;
+    margin-left: 55px;
+    padding-right: 50px;
+}
+
+.image1{
+    width: 100%;
+    height: 715px;
+    background-color: #E63946;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup{
+    width: 350px;
+    height: 330px;
+    padding: 30px 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    top: -200%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.popup.active{
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
+
+/*.popup .icon{
+    margin: 5px 0;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #34f234;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 60px;
+}
+
+.popup .icon i.fa{
+    font-size: 30px;
+    color: #34f234;
+}*/
+
+.popup .title{
+    margin: 5px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.popup .description{
+    color: #222;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.popup .dismiss-btn{
+    margin-top: 15px;
+    color: white;
+}
+
+.popup .dismiss-btn button{
+    padding: 10px 20px;
+    background: #E63946;
+    color: #ffffff;
+    border: 2px solid #111;
+    font-size: 12px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.popup .dismiss-btn button:hover{
+    color: #ffffff;
+    background: #1D3557;
+}
+
+.popup .dismiss-btn button a{
+    text-decoration: none;
+    color: white;
+}
+
+.popup > div{
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+
+.popup.active > div{
+    top: 0;
+    opacity: 1;
+}
+
+.popup.active.icon{
+    transition: all 300ms ease-in-out 250ms;
+}
+
+.popup.active.title{
+    transition: all 300ms ease-in-out 300ms;
+}
+
+.popup.active.description{
+    transition: all 300ms ease-in-out 350ms;
+}
+
+.popup.active.dismiss-btn{
+    transition: all 300ms ease-in-out 400ms;
+}
+
+#open-popup-btn{
+    background-color: #A8DADC;
+    color: #1D3557;
+    font-size: 20px;
+    font-weight: bold;
+    width: 280px;
+    height: 45px;
+    border-radius: 30px;
+    margin-top: 405px;
+    font-family: 'Pacifico', cursive;
+}
+
+#open-popup-btn:hover{
+    background-color: #E63946;
+    color: #ffffff;
+    font-family: 'IBM Plex Mono', monospace;
+}
+/*------------logo-------------*/
+
+.logo{
+    background-color: #f07167;
+    width: 180px;
+    height: 60px;
+    margin-left: 48px;
+    margin-top: -20px;
+
+}
+
+.logo1{
+    width: 180px;
+    height: 60px;
+    margin-left: 79px;
+    margin-top: -60px;
+    background: rgb(29,53,87);
+    background: linear-gradient(90deg, rgba(29,53,87,1) 1%, rgba(69,123,157,1) 11%, rgba(168,218,220,1) 61%);
+}
+
+.logo-name a{
+    text-decoration: none;
+    font-size: 40px;
+    color: #030303;
+    font-family: 'Courgette', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Shadows Into Light', cursive;
+}
