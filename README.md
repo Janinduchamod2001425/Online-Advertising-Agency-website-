@@ -2,7 +2,7 @@
 
 ### Digital Advertising Enhancement Web Application 
 
-![DigitalWave Demo](./assets/digitalwave.png)
+![DigitalWave Demo](./assets/digitalwave.jpg)
 
 DigitalWave is a full-stack web application designed to revolutionize the user experience in the digital advertising sector. By focusing on ease of use, efficiency, and advanced features, this application empowers users to seamlessly navigate and manage digital advertising tasks. It showcases a blend of cutting-edge web technologies and a structured development approach.
 
