@@ -1,4 +1,6 @@
-# DigitalWave - Digital Advertising Enhancement Web Application 🎯📢🔔🖥
+# DigitalWave 🎯📢🔔🖥
+
+### Digital Advertising Enhancement Web Application 
 
 ![DigitalWave Demo](./assets/digitalwave.png)
 
